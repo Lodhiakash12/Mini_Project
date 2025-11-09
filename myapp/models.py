@@ -10,7 +10,7 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
     
-class Signup(models.Model):
+class User(models.Model):
     fname=models.CharField(max_length=100)
     lname=models.CharField(max_length=100)
     email=models.EmailField()
@@ -23,15 +23,7 @@ class Signup(models.Model):
     def __str__(self):
         return self.fname+""+self.lname
 
-class Login(models.Model):
-     
-    email=models.EmailField()
-    password=models.CharField(max_length=100)
-     
-    
-
-    def __str__(self):
-        return self.email
+ 
     
 
     
