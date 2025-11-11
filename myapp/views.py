@@ -101,7 +101,7 @@ def change_password(request):
     else:
         return render(request, 'change-password.html')
 
-
+#Profile Logic
 def profile(request):
     user=User.objects.get(email=request.session['email'])
     if request.method=="POST":
